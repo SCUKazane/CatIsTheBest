@@ -12,7 +12,6 @@ print(cfg.CAMERA_RESOLUTION)
 
 """
 
-
 import os
 
 #PATHS
@@ -47,8 +46,7 @@ USE_SSD1306_128_32 = False    # Enable the SSD_1306 OLED Display
 SSD1306_128_32_I2C_BUSNUM = 1 # I2C bus number
 
 #DRIVETRAIN
-#These options specify which chasis and motor setup you are using. Most are using SERVO_ESC.
-#DC_STEER_THROTTLE uses HBridge pwm to control one steering dc motor, and one drive wheel motor
+#These options specify which chasis and motor setup you are using. Most are using SERVO_ESC.#DC_STEER_THROTTLE uses HBridge pwm to control one steering dc motor, and one drive wheel motor
 #DC_TWO_WHEEL uses HBridge pwm to control two drive motors, one on the left, and one on the right.
 #SERVO_HBRIDGE_PWM use ServoBlaster to output pwm control from the PiZero directly to control steering, and HBridge for a drive motor.
 #PIGPIO_PWM uses Raspberrys internal PWM
@@ -66,9 +64,9 @@ STEERING_PWM_INVERTED = False   #If PWM needs to be inverted
 
 #THROTTLE
 THROTTLE_CHANNEL = 0            #channel on the 9685 pwm board 0-15
-THROTTLE_FORWARD_PWM = 420      #pwm value for max forward throttle
-THROTTLE_STOPPED_PWM = 340      #pwm value for no movement
-THROTTLE_REVERSE_PWM = 270      #pwm value for max reverse throttle
+THROTTLE_FORWARD_PWM = 310      #pwm value for max forward throttle
+THROTTLE_STOPPED_PWM = 300      #pwm value for no movement
+THROTTLE_REVERSE_PWM = 290      #pwm value for max reverse throttle
 
 #THROTTLE FOR PIGPIO_PWM
 THROTTLE_PWM_PIN = 18           #Pin numbering according to Broadcom numbers
